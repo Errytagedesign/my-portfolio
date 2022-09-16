@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+
+:root {
+  --mainColor: #001707;
+  --secColor: #01220b;
+  --pryColor: #44D7A8;
+  /* --secColor: #08FF08; */
+  --fontSuperBig: 2.5rem;
+  --fontBig: 1.5rem;
+  --fontMed: 1.2rem;
+  --fontSmall: .8rem;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, 
+*::after, 
+*::before{
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+      box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--mainColor);
+  color: var(--pryColor);
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ====General fonts styles=== */
+
+h2{
+    font-size: var(--fontSuperBig);
+    font-weight: 700;
+    color: var(--black);
+}
+h3{
+    font-size:var(--fontBig);
+    font-weight: 500;
+    color: var(--black);    
 }
 
-.App-link {
-  color: #61dafb;
+h4{
+  font-size: var(--fontMed);
+  font-weight: 500;
+    color: var(--black);   
 }
 
-@keyframes App-logo-spin {
+p{
+    font-size: var(--fontSmall);
+    font-weight: 400;
+    color: var(--black);
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+/* ====General Button styles=== */
+
+.Btn{
+  border: solid 2px var(--pryColor);
+  color: var(--pryColor);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: .5em 1em;
+}
+
+.Btn:hover{
+  border: solid 2px var(--pryColor);
+  box-shadow: 0px 24px 48px rgba(27, 44, 193, 0.1);
+  transform: scale(1.1);
+}
+
+/* ===General Image Animation=== */
+img{
+  transition: all 0.3s;
+  animation: animateallPic 0.5s;
+  
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+@keyframes animateallPic {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+
+
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pryColor)
+}
+
