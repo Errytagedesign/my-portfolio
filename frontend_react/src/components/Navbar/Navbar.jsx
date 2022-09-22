@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {images} from "../../constants/exportImg"
+import {images} from "../exportImg"
 import "./Navbar.scss"
 
 
@@ -7,22 +7,22 @@ const navLink = [
   {
     id: 1,
     name: "About",
-    link: "/about"
+    link: "#about"
   },
   {
     id: 2,
     name: "Experience",
-    link: "/experience"
+    link: "#experience"
   },
   {
     id: 3,
     name: "Work",
-    link: "/work"
+    link: "#work"
   },
   {
     id: 4,
     name: "Contact",
-    link: "/contact"
+    link: "#contact"
   }
 ]
 

@@ -1,26 +1,24 @@
+import React, { useEffect } from "react";
+
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Compoenets
-import {
-  About,
-  Footer,
-  Header,
-  Skills,
-  Testimonials,
-  Work,
-} from "./constants/exportAllcomp";
-// import { Navbar } from "./components/exportNav";
-import Navbar from "./components/Navbar/Navbar";
+import { HomePage, Navbar, Footer } from "./components/exportAllcomp";
 
 function App() {
+  const AOS = require("aos");
+  useEffect(() => {
+    AOS.init();
+  }, [AOS]);
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <About />
-      <Work />
-      <Skills />
-      <Testimonials />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
       <Footer />
     </div>
   );
