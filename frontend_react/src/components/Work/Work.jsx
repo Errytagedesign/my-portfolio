@@ -1,10 +1,8 @@
-import React from 'react'
-import "./Work.scss"
+import React from "react";
+import "./Work.scss";
 
 function Work() {
-  return (
-    <div>Work</div>
-  )
+  return <div className="container">Work</div>;
 }
 
-export default Work
+export default Work;

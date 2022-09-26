@@ -1,9 +1,12 @@
 .hero {
+  p {
+    color: var(--pryColor);
+  }
   h2 {
     // width: 100%;
     color: var(--lightGrey);
     line-height: 1.2em;
-    font-size: 2.1rem;
+    font-size: var(--fontBig);
     transition: all 0.5s ease-in;
 
     &:hover {
@@ -15,7 +18,7 @@
 
     @media screen and (min-width: 768px) {
       width: 80%;
-      font-size: 4rem;
+      font-size: var(--fontSuperBig);
     }
   }
 
