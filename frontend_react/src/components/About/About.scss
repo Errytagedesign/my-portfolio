@@ -1,25 +1,105 @@
 .about {
-  h4 {
-    width: 80%;
-    position: relative;
-    &:after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 70%;
-      position: absolute;
-      top: 60%;
-      left: 150px;
-      background-color: var(--grey);
+  section {
+    .sectionHeader {
+      width: 80%;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        position: absolute;
+        top: 60%;
+        left: 150px;
+        background-color: var(--grey);
+      }
     }
   }
 
+  .profile {
+    // border: solid 2px var(--pryColor);
+    // padding: 2em;
+    // border-radius: 50%;
+    // animation: rolling 3s ease infinite;
+
+    // @media screen and (min-width: 600px) {
+    padding: 2em;
+    // }
+
+    &:after {
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: solid 2px var(--pryColor);
+      border-radius: 550px;
+      padding: 2em;
+      animation: rolling 1s ease-in-out infinite;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 550px;
+    }
+
+    @keyframes rolling {
+      0% {
+        transform: scale(0.4);
+        border: solid 2px var(--pryColor);
+      }
+      50% {
+        transform: scale(1);
+        border: solid 2px var(--lightGrey);
+        background-color: #fff;
+      }
+      100% {
+        transform: scale(1.05);
+        border: solid 2px var(--grey);
+        background-color: purple;
+      }
+    }
+
+    // @keyframes rolling {
+    //   0% {
+    //     transform: rotate(0deg);
+    //     border: solid 2px var(--pryColor);
+    //   }
+    //   50% {
+    //     transform: rotate(360deg);
+    //     border: solid 2px var(--lightGrey);
+    //     background-color: purple;
+    //   }
+    //   100% {
+    //     transform: rotate(360deg);
+    //     border: solid 2px var(--grey);
+    //     background-color: #fff;
+    //   }
+    // }
+  }
+
+  margin-bottom: 10em;
   .icons {
     // font-size: 2rem;
+
     margin-bottom: 2em;
+
     img {
-      width: 10%;
-      padding: 1em;
+      width: 20%;
+      padding: 0.5em;
+      margin-top: 0.7em;
+
+      // &:nth-child(1) {
+      //   padding-left: 0;
+      // }
+
+      @media screen and (min-width: 768px) {
+        width: 10%;
+      }
     }
   }
 }
