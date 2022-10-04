@@ -1,0 +1,10 @@
+.contact {
+  a {
+    &:hover {
+      background-color: var(--pryColor);
+      color: black;
+      border: 0;
+      transition: all 1s ease-in-out;
+    }
+  }
+}

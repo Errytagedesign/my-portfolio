@@ -3,7 +3,7 @@ import React from "react";
 import {
   About,
   HeroSection,
-  Testimonials,
+  Contact,
   Work,
 } from "../../components/exportAllcomp";
 
@@ -12,7 +12,7 @@ import "./HomePage.scss";
 
 function HomePage() {
   return (
-    <div className="container home">
+    <div className=" container home">
       <HeroSection />
       <About />
 
@@ -31,12 +31,13 @@ function HomePage() {
                 image={item.imgUrl}
                 desc={item.desc}
                 stacks={item.stacks}
+                link={item.link}
               />
             </article>
           ))}
         </section>
       </section>
-      <Testimonials />
+      <Contact />
     </div>
   );
 }
