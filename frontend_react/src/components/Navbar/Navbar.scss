@@ -1,5 +1,17 @@
 nav {
+  position: sticky;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 1em 0;
+  margin-bottom: 5em;
+  background-color: rgba(1, 38, 18, 0.063);
+  backdrop-filter: blur(5px) brightness(0.9);
+  -webkit-background-color: rgba(255, 0, 0, 0.063);
+  backdrop-filter: blur(5px) brightness(0.9);
+  z-index: 1;
 
   a {
     &:hover {
@@ -7,11 +19,15 @@ nav {
     }
   }
 
+  .ham {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
     .ham {
       cursor: pointer;
       z-index: 9;
-
+      display: flex;
       width: 60px;
       height: 35px;
       position: relative;

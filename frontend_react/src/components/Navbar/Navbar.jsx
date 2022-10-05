@@ -34,9 +34,10 @@ function Navbar() {
   };
 
   return (
-    <nav className="container d-flex flex-row justify-content-between align-items-center">
+    <nav className="container d-flex flex-row justify-content-between align-items-center mx-auto">
       <div className="col-4">
-        <img src={images.logo} alt=" Sodeeq's Logo" />
+        {/* <img src={images.logo} alt=" Sodeeq's Logo" /> */}
+        <h2> SDQ </h2>
       </div>
 
       <aside className={` col-6 ${navbar ? " displayNav" : "navMove"}`}>
@@ -49,7 +50,15 @@ function Navbar() {
 
           <div>
             {" "}
-            <button className="Btn"> Resume </button>{" "}
+            <a
+              href={images.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="Btn"
+            >
+              {" "}
+              Resume{" "}
+            </a>{" "}
           </div>
         </ul>
       </aside>

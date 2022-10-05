@@ -30,6 +30,7 @@ import travels from "../assets/travels.png";
 import countries from "../assets/countries.png";
 import emagazine from "../assets/emagazine.png";
 import movies from "../assets/movies.png";
+import resume from "../assets/sodeeqawoyemi.pdf";
 
 import sdqProfile from "../assets/sdq-profile.jpg";
 import circle from "../assets/circle.svg";
@@ -46,6 +47,7 @@ import spotify from "../assets/spotify.png";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   email,
+  resume,
   mobile,
   realestate,
   omove,
