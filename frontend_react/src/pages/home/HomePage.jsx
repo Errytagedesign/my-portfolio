@@ -16,7 +16,7 @@ function HomePage() {
       <HeroSection />
       <About />
 
-      <section className="mt-5">
+      <section id="work" className="mt-5">
         <article data-aos="fade-right" className="mt-5  mb-5">
           {" "}
           <h4 className="sectionHeader "> Some Things I’ve Built </h4>

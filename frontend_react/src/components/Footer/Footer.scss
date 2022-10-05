@@ -1,0 +1,57 @@
+.footer {
+  margin-top: 9em;
+  //   margin-bottom: 5em;
+  position: relative;
+
+  .social {
+    display: none;
+    transition: all 0.5s ease-in-out;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: -80%;
+      padding: 0 1em;
+      transition: all 0.5s ease-in-out;
+
+      span {
+        width: 2px;
+        height: 30vh;
+        background-color: var(--grey);
+        margin-top: 0.5em;
+      }
+
+      .Icons {
+        font-size: 1.5rem;
+
+        a {
+          &:hover {
+            color: var(--lightGrey);
+            transition: all 1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  .iconss {
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 1em auto;
+    transition: all 0.5s ease-in-out;
+
+    a {
+      &:hover {
+        color: var(--lightGrey);
+        transition: all 1s ease-in-out;
+      }
+    }
+  }
+}

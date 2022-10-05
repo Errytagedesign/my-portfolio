@@ -1,4 +1,8 @@
 .home {
+  width: 95%;
+  @media screen and (min-width: 500px) {
+    width: 80%;
+  }
   .sectionHeader {
     width: 80%;
     position: relative;

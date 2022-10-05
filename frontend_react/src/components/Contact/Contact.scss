@@ -1,4 +1,8 @@
 .contact {
+  h2 {
+    font-size: var(--fontBig);
+  }
+
   a {
     &:hover {
       background-color: var(--pryColor);

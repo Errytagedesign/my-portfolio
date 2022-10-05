@@ -3,10 +3,13 @@ import "./Contact.scss";
 
 function Contact() {
   return (
-    <div className="d-flex flex-column text-center mt-5 contact col-12 col-md-7 mx-auto ">
+    <div
+      id="contact"
+      className="d-flex flex-column text-center mt-5 contact col-12 col-md-7 mx-auto "
+    >
       <p data-aos="fade-left" className="mt-5">
         {" "}
-        What next?{" "}
+        What's next?{" "}
       </p>
       <h2 data-aos="fade-right" className="mb-3">
         {" "}
