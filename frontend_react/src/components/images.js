@@ -24,6 +24,8 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
 import goodnews from "../assets/goodnews.png";
+import realestate from "../assets/realestate.png";
+import omove from "../assets/omove.png";
 import travels from "../assets/travels.png";
 import countries from "../assets/countries.png";
 import emagazine from "../assets/emagazine.png";
@@ -45,6 +47,8 @@ import spotify from "../assets/spotify.png";
 export default {
   email,
   mobile,
+  realestate,
+  omove,
   api,
   cpp,
   css,
