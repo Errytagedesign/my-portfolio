@@ -36,7 +36,7 @@ function HeroSection() {
           I build amazing things for the web.
         </motion.h2>
         <motion.p className="desc" variants={item}>
-          I’m a software engineer specializing in building exceptional digital
+          I’m a software engineer specialized in building exceptional digital
           experiences and accessible, human-centered products.
         </motion.p>
       </motion.section>
