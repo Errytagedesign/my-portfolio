@@ -6,7 +6,7 @@
   .social {
     display: none;
     transition: all 0.5s ease-in-out;
-    z-index: -1;
+    // z-index: 1;
 
     @media screen and (min-width: 768px) {
       .mail {
@@ -21,12 +21,13 @@
       justify-content: space-between;
       position: fixed;
       width: 100%;
-      top: 0;
+      top: 80%;
       left: 0;
       right: 0;
-      bottom: -80%;
+      bottom: 0;
       padding: 0 1em;
       transition: all 0.5s ease-in-out;
+      z-index: 0;
 
       span {
         width: 2px;
@@ -42,7 +43,7 @@
           color: var(--grey);
 
           &:hover {
-            color: var(--lightGrey);
+            color: var(--pryColor);
             transition: all 1s ease-in-out;
           }
         }
@@ -60,8 +61,8 @@
       color: var(--grey);
 
       &:hover {
-        color: var(--lightGrey);
-        transition: all 1s ease-in-out;
+        color: var(--pryColor);
+        transition: all 0.5s ease-in-out;
       }
     }
   }
