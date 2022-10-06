@@ -9,6 +9,12 @@
     z-index: -1;
 
     @media screen and (min-width: 768px) {
+      .mail {
+        writing-mode: vertical-rl;
+        font-size: 0.7em;
+        color: var(--grey);
+      }
+
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -33,6 +39,8 @@
         font-size: 1.5rem;
 
         a {
+          color: var(--grey);
+
           &:hover {
             color: var(--lightGrey);
             transition: all 1s ease-in-out;
@@ -49,6 +57,8 @@
     transition: all 0.5s ease-in-out;
 
     a {
+      color: var(--grey);
+
       &:hover {
         color: var(--lightGrey);
         transition: all 1s ease-in-out;

@@ -35,13 +35,20 @@ function Navbar() {
 
   return (
     <nav className="container d-flex flex-row justify-content-between align-items-center mx-auto">
-      <div className="col-4">
-        {/* <img src={images.logo} alt=" Sodeeq's Logo" /> */}
-        <h2> SDQ </h2>
+      <div data-aos="zoom-in" className="col-4 logo">
+        <img className="col-2" src={images.logo} alt=" Sodeeq's Logo" />
+        {/* <h2> SDQ </h2> */}
       </div>
 
-      <aside className={` col-6 ${navbar ? " displayNav" : "navMove"}`}>
-        <ul className="d-flex flex-column flex-md-row justify-content-between col-12 text-center align-items-center">
+      <aside
+        data-aos=" fade-up"
+        className={` col-6 ${navbar ? " displayNav" : "navMove"}`}
+      >
+        <ul
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          className="d-flex flex-column flex-md-row justify-content-between col-12 text-center align-items-center"
+        >
           {navLink.map((item) => (
             <li key={item.id} onClick={handleNav}>
               <a href={item.link}> {item.name} </a>
@@ -55,6 +62,8 @@ function Navbar() {
               target="_blank"
               rel="noreferrer"
               className="Btn"
+              data-aos="fade-right"
+              data-aos-delay="600"
             >
               {" "}
               Resume{" "}
