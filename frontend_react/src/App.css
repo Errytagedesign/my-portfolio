@@ -28,6 +28,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--mainColor);
   color: var(--pryColor);
+  overflow-x: hidden;
 }
 
 /* ====General fonts styles=== */

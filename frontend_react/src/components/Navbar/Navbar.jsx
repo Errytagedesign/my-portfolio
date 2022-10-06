@@ -34,7 +34,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="container d-flex flex-row justify-content-between align-items-center mx-auto">
+    <nav className="container d-flex flex-row justify-content-between align-items-center">
       <div data-aos="zoom-in" className="col-4 logo">
         <img
           className="col-6 col-md-2"

@@ -24,7 +24,7 @@ function Contact() {
         {" "}
         <a href="mailto: errytage@gmail.com" className="Btn">
           {" "}
-          Say Hellow{" "}
+          Say Hello{" "}
         </a>{" "}
       </div>
     </div>
