@@ -36,7 +36,11 @@ function Navbar() {
   return (
     <nav className="container d-flex flex-row justify-content-between align-items-center mx-auto">
       <div data-aos="zoom-in" className="col-4 logo">
-        <img className="col-2" src={images.logo} alt=" Sodeeq's Logo" />
+        <img
+          className="col-6 col-md-2"
+          src={images.logo}
+          alt=" Sodeeq's Logo"
+        />
         {/* <h2> SDQ </h2> */}
       </div>
 
