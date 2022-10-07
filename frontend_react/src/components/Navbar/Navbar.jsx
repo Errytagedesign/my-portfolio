@@ -34,54 +34,56 @@ function Navbar() {
   };
 
   return (
-    <nav className="container d-flex flex-row justify-content-between align-items-center">
-      <div data-aos="zoom-in" className="col-4 logo">
-        <img
-          className="col-6 col-md-2"
-          src={images.logo}
-          alt=" Sodeeq's Logo"
-        />
-        {/* <h2> SDQ </h2> */}
-      </div>
+    <main>
+      <nav className="container-fluid d-flex flex-row justify-content-between align-items-center">
+        <div data-aos="zoom-in" className="col-4 logo">
+          <img
+            className="col-6 col-md-2"
+            src={images.logo}
+            alt=" Sodeeq's Logo"
+          />
+          {/* <h2> SDQ </h2> */}
+        </div>
 
-      <aside
-        data-aos=" fade-up"
-        className={` col-6 ${navbar ? " displayNav" : "navMove"}`}
-      >
-        <ul
-          data-aos="zoom-in"
-          data-aos-delay="300"
-          className="d-flex flex-column flex-md-row justify-content-between col-12 text-center align-items-center"
+        <aside
+          data-aos=" fade-up"
+          className={` col-6 ${navbar ? " displayNav" : "navMove"}`}
         >
-          {navLink.map((item) => (
-            <li key={item.id} onClick={handleNav}>
-              <a href={item.link}> {item.name} </a>
-            </li>
-          ))}
+          <ul
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            className=" col-12 text-center "
+          >
+            {navLink.map((item) => (
+              <li key={item.id} onClick={handleNav}>
+                <a href={item.link}> {item.name} </a>
+              </li>
+            ))}
 
-          <div>
-            {" "}
-            <a
-              href={images.resume}
-              target="_blank"
-              rel="noreferrer"
-              className="Btn"
-              data-aos="fade-right"
-              data-aos-delay="600"
-            >
+            <div>
               {" "}
-              Resume{" "}
-            </a>{" "}
-          </div>
-        </ul>
-      </aside>
-      {/* Hambuger icon */}
-      <div onClick={handleNav} className={navbar ? "ham" : "open"}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
+              <a
+                href={images.resume}
+                target="_blank"
+                rel="noreferrer"
+                className="Btn"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
+                {" "}
+                Resume{" "}
+              </a>{" "}
+            </div>
+          </ul>
+        </aside>
+        {/* Hambuger icon */}
+        <div onClick={handleNav} className={navbar ? "ham" : "open"}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </main>
   );
 }
 

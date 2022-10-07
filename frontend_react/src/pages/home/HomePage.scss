@@ -1,7 +1,11 @@
 .home {
+  // padding: 1em;
+  // margin: 0 auto;
   width: 95%;
+  // overflow: hidden;
   @media screen and (min-width: 500px) {
     width: 80%;
+    // padding: 1em 2em;
   }
   .sectionHeader {
     width: 80%;

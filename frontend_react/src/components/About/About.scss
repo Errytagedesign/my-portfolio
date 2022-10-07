@@ -23,7 +23,7 @@
     // animation: rolling 3s ease infinite;
 
     // @media screen and (min-width: 600px) {
-    padding: 2em;
+    // padding: 2em;
     // }
 
     &:after {
@@ -38,13 +38,14 @@
       height: 100%;
       border: solid 2px var(--pryColor);
       border-radius: 550px;
-      padding: 2em;
+      padding: 1em;
       animation: rolling 1s ease-in-out infinite;
     }
 
     img {
       width: 100%;
       border-radius: 550px;
+      padding: 1em;
     }
 
     @keyframes rolling {

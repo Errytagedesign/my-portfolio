@@ -14,8 +14,8 @@
     &:hover {
       color: transparent;
       -webkit-text-stroke: var(--pryColor) 2px;
-      transform: scale(1.1);
-      box-shadow: var(--shadow);
+      // transform: scale(1.1);
+      // box-shadow: var(--shadow);
     }
 
     @media screen and (min-width: 768px) {

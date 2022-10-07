@@ -50,7 +50,7 @@ function About() {
           </section>
         </article>
 
-        <div data-aos="zoom-in" className="profile col-12 col-lg-4">
+        <div data-aos="zoom-in" className="profile col-10 col-lg-4">
           <img src={images.sdqProfile} alt="Sodeeq awoyemi" />
         </div>
       </section>
