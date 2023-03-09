@@ -32,6 +32,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--mainColor);
   color: var(--pryColor);
+  font-size: 16px;
 }
 
 /* ====General fonts styles=== */

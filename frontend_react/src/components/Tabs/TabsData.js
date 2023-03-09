@@ -1,3 +1,7 @@
+import GoodNews from "../Experience/GoodNews";
+import Operaads from "../Experience/Operaads";
+import Wolfpack from "../Experience/Wolfpack";
+
 export const TabsData = [
   {
     TabTitle: [
@@ -12,8 +16,9 @@ export const TabsData = [
       },
     ],
     TabContents: [
-      { id: "tab1", comp: "one" },
-      { id: "tab2", comp: "two" },
+      { id: "tab1", comp: <Wolfpack /> },
+      { id: "tab2", comp: <Operaads /> },
+      { id: "tab3", comp: <GoodNews /> },
     ],
   },
 ];

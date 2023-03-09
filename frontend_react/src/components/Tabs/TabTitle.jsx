@@ -10,11 +10,8 @@ function TabTitle({ id, title, activeTab, setActiveTab, styles, icon }) {
       onClick={handTabSwitch}
       className={activeTab === id ? "active" : "notActive"}
     >
-      <div className="d-flex flex-row">
-        {" "}
-        <h4 className="d-flex flex-row me-3">{icon}</h4>
-        <h4>{title}</h4>
-      </div>
+      {" "}
+      <h4>{title}</h4>
     </div>
   );
 }
