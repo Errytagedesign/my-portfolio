@@ -1,4 +1,5 @@
 import React from "react";
+import Experience from "../../components/Experience/Experience";
 
 import {
   About,
@@ -15,6 +16,7 @@ function HomePage() {
     <div className=" container home">
       <HeroSection />
       <About />
+      <Experience />
 
       <section id="work" className="mt-5">
         <article data-aos="fade-right" className="mt-5  mb-5">

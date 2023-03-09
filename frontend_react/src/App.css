@@ -1,10 +1,11 @@
 :root {
   --mainColor: #001707;
-  --secColor: #01220b;
+  --secColor: #013d13;
   --pryColor: #44d7a8;
-  --grey: #8892b0;
+  --grey: #5d7b5f;
+  --Grey: #114c2436;
   --lightGrey: #ccd6f6;
-  /* --secColor: #08FF08; */
+  --hover: #013d1327;
   --fontSuperBig: 3.5rem;
   --fontBig: 2.5rem;
   --fontMed: 1.8rem;

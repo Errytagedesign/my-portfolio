@@ -1,0 +1,48 @@
+.Experience {
+  .tabsContainer {
+    // border-left: solid 5px var(--grey);
+    cursor: pointer;
+
+    .tabTitle {
+      h4 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding: 0.3em 0;
+      }
+
+      &:hover {
+        color: var(--pryColor);
+        background-color: var(--hover);
+      }
+      .active {
+        color: var(--pryColor);
+        border-left: solid 5px var(--pryColor);
+      }
+      .notActive {
+        color: var(--grey);
+        border-left: solid 5px var(--Grey);
+      }
+    }
+  }
+
+  margin-bottom: 10em;
+  .icons {
+    // font-size: 2rem;
+
+    margin-bottom: 2em;
+
+    img {
+      width: 20%;
+      padding: 0.5em;
+      margin-top: 0.7em;
+
+      // &:nth-child(1) {
+      //   padding-left: 0;
+      // }
+
+      @media screen and (min-width: 768px) {
+        width: 10%;
+      }
+    }
+  }
+}
