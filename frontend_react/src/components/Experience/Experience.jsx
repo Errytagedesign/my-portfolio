@@ -33,7 +33,7 @@ function Experience() {
             ))}
           </section>
         </article>
-        <article className="tabContents d-flex flex-column col-12 col-lg-8">
+        <article className="tabContents d-flex flex-column col-12 p-3 p-lg-0 col-lg-8">
           {TabsData[0].TabContents.map((tab) => (
             <section key={tab.id} className="tabContents">
               <TabContents id={tab.id} activeTab={activeTab} comps={tab.comp} />
