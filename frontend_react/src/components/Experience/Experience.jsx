@@ -12,7 +12,7 @@ function Experience() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   return (
-    <main className="Experience" id="Experience" data-sr-id="Experience">
+    <main className="Experience" id="experience">
       <header data-aos="fade-right" className=" sectionHeader">
         {" "}
         <h4 className=" "> Where I’ve Worked</h4>

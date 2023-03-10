@@ -7,7 +7,7 @@ import { images } from "../exportImg";
 
 function About() {
   return (
-    <div className="about" id="about" data-sr-id="2">
+    <div className="about" id="about">
       <section data-aos="fade-right" className="sectionHeader">
         {" "}
         <h4 className=" "> About Me</h4>

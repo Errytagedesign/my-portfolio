@@ -40,7 +40,7 @@ function Navbar() {
           <img
             className="col-6 col-md-2"
             src={images.logo}
-            alt=" Sodeeq's Logo"
+            alt=" Sodeeq Awoyemi Logo"
           />
           {/* <h2> SDQ </h2> */}
         </div>
