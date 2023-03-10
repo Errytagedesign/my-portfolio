@@ -34,6 +34,7 @@ function HomePage() {
                 desc={item.desc}
                 stacks={item.stacks}
                 link={item.link}
+                github={item.github}
               />
             </article>
           ))}

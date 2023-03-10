@@ -9,7 +9,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## App Description
 
 A portfolio website for Sodeeq Olaide Awoyemi.
-
 Created using reactjs, bootstrap and Sass
 
 ## Tech Tools

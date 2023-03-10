@@ -7,6 +7,7 @@ export const WorkData = [
     desc: "A web-app developed for movies lovers, to search and read more about just released movies.",
     imgUrl: images.movies,
     link: "https://errytage-rmdb.netlify.app",
+    github: "https://github.com/Errytagedesign/react-mdb",
     stacks: ["Reactjs", "MovieDBApi", "Styled-Components", "Bootstrap"],
   },
   {
@@ -15,6 +16,7 @@ export const WorkData = [
     desc: " Search for countries around the world to find out about their name, offcial name, city, countries they shared borders with, populations, currency etc ",
     imgUrl: images.countries,
     link: "https://errytagecountries.netlify.app",
+    github: "https://github.com/Errytagedesign/countries-web-app",
     stacks: ["React", "Rest-API", "Scss", "Bootstrap"],
   },
   {
@@ -23,6 +25,7 @@ export const WorkData = [
     desc: " A realestate web-app created using nextjs with search functionality to search for rental properties, for sales properties and als search for properties by locations ",
     imgUrl: images.realestate,
     link: "https://realestate-web-app-errytagedesign.vercel.app/search",
+    github: "https://github.com/Errytagedesign/realestate-web-app",
     stacks: ["Nextjs", "React", "Scss", "Bootstrap"],
   },
   {
@@ -39,6 +42,7 @@ export const WorkData = [
     desc: " A simple travel and tours website, with locations and prices ",
     imgUrl: images.travels,
     link: "https://errytagetravelandtour.netlify.app",
+    github: "https://github.com/Errytagedesign/TRAVEL-AND-TOUR-PROJECT",
     stacks: ["HTML", "CSS", "Javascript", "Bootstrap"],
   },
   {
@@ -47,6 +51,7 @@ export const WorkData = [
     desc: " Emagazine is an international magazine brand that covers everything about notable women in nigeria and african, this website was built to give the brand an online presence in 2021 for their annual event,  the VIP 100+ women of impact award",
     imgUrl: images.emagazine,
     link: "https://errytagetravelandtour.netlify.app",
+    github: "https://github.com/Errytagedesign/EVIPMAGAZINE",
     stacks: ["HTML", "CSS", "Javascript", "Bootstrap"],
   },
 
@@ -56,6 +61,7 @@ export const WorkData = [
     desc: " Just like you book for ride on uber, bolt etc, you can book for keke using omove app, this is a landing page to advertise the app ",
     imgUrl: images.omove,
     link: "https://omove-web-app.vercel.app/",
+    github: "https://github.com/Errytagedesign/omove-web-app",
     stacks: ["React", "Bootstrap"],
   },
 ];
