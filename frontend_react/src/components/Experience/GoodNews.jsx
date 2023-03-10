@@ -8,28 +8,25 @@ function GoodNews() {
         {" "}
         <mark>Frontend developer</mark> @GoodNews Nigeria
       </h4>
-      <small data-aos="fade-left"> October 2022 - January 2023 </small>
+      <small data-aos="fade-left"> January - July 2022 </small>
       <br />
       <br />
       <p data-aos="fade-left">
         <ul>
           <li>
-            Collaborated with cross‑functional teams to design, develop, and
-            launch new features on the website, resulting in a 20% increase in
-            website traffic.
+            Designed and developed a web application that aggregates good news
+            about Nigeria and Nigerians from multiple sources.
           </li>
           <li>
-            Developed and maintained multiple projects using ReactJS, NextJS,
-            and other front‑end technologies.
+            Used ReactJS and NextJS to build a dynamic and fast‑loading website
+            and Redux for global state managements.
           </li>
           <li>
-            Implemented responsive design and optimized website performance for
-            be􀂂er user experience.
+            Implemented a responsive design to ensure optimal user experience on
+            different devices.
           </li>
-          <li>
-            Utilized bootstrap and styled‑components to style the website
-            effectively.
-          </li>
+          <li>Utilized styled‑components to effectively style the website.</li>
+          <li>Utilized styled‑components to effectively style the website.</li>
         </ul>
       </p>
     </main>

@@ -2,30 +2,6 @@ import images from "../images";
 
 export const WorkData = [
   {
-    id: 1,
-    name: "Goodnews Nigeria web-app",
-    desc: "  A news article web-app built for nigerians, to read everything good and awesome about nigeria and nigerians home and abroad. features include, dashboard, programatics advert, sign up and sign, like, comment and share, backend integrations.",
-    imgUrl: images.goodnews,
-    link: "https://goodnewsng.netlify.app",
-    stacks: ["Reactjs", "NodeJs", "RapidApi", "Cloudinary", "Bootstrap"],
-  },
-  {
-    id: 2,
-    name: "Travel and Tour",
-    desc: " A simple travel and tours website, with locations and prices ",
-    imgUrl: images.travels,
-    link: "https://errytagetravelandtour.netlify.app",
-    stacks: ["HTML", "CSS", "Javascript", "Bootstrap"],
-  },
-  {
-    id: 3,
-    name: "Emagazine",
-    desc: " Emagazine is an international magazine brand that covers everything about notable women in nigeria and african, this website was built to give the brand an online presence in 2021 for their annual event,  the VIP 100+ women of impact award",
-    imgUrl: images.emagazine,
-    link: "https://errytagetravelandtour.netlify.app",
-    stacks: ["HTML", "CSS", "Javascript", "Bootstrap"],
-  },
-  {
     id: 4,
     name: "Movies Database",
     desc: "A web-app developed for movies lovers, to search and read more about just released movies.",
@@ -49,6 +25,31 @@ export const WorkData = [
     link: "https://realestate-web-app-errytagedesign.vercel.app/search",
     stacks: ["Nextjs", "React", "Scss", "Bootstrap"],
   },
+  {
+    id: 1,
+    name: "Goodnews Nigeria web-app",
+    desc: "  A news article web-app built for nigerians, to read everything good and awesome about nigeria and nigerians home and abroad. features include, dashboard, programatics advert, sign up and sign, like, comment and share, backend integrations.",
+    imgUrl: images.goodnews,
+    link: "https://goodnewsng.netlify.app",
+    stacks: ["Reactjs", "NodeJs", "RapidApi", "Cloudinary", "Bootstrap"],
+  },
+  {
+    id: 2,
+    name: "Travel and Tour",
+    desc: " A simple travel and tours website, with locations and prices ",
+    imgUrl: images.travels,
+    link: "https://errytagetravelandtour.netlify.app",
+    stacks: ["HTML", "CSS", "Javascript", "Bootstrap"],
+  },
+  {
+    id: 3,
+    name: "Emagazine",
+    desc: " Emagazine is an international magazine brand that covers everything about notable women in nigeria and african, this website was built to give the brand an online presence in 2021 for their annual event,  the VIP 100+ women of impact award",
+    imgUrl: images.emagazine,
+    link: "https://errytagetravelandtour.netlify.app",
+    stacks: ["HTML", "CSS", "Javascript", "Bootstrap"],
+  },
+
   {
     id: 7,
     name: "Omove Landing page",

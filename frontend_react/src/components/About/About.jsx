@@ -7,14 +7,14 @@ import { images } from "../exportImg";
 
 function About() {
   return (
-    <div className="about" id="about">
-      <section data-aos="fade-right" className="mt-5">
+    <div className="about" id="about" data-sr-id="2">
+      <section data-aos="fade-right" className="sectionHeader">
         {" "}
-        <h4 className="sectionHeader "> About Me</h4>
+        <h4 className=" "> About Me</h4>
       </section>
       <section
         data-aos="fade-right"
-        className="d-flex flex-column flex-lg-row justify-content-between align-items-center"
+        className="d-flex flex-column flex-lg-row justify-content-between align-items-center mt-5"
       >
         <article className="col-12 col-lg-7  ">
           <p>
@@ -41,7 +41,7 @@ function About() {
               <img src={images.css} alt="logos" />
               <img src={images.javascript} alt="logos" />
               <img src={images.react} alt="logos" />
-              <img src={images.typescript} alt="logos" />
+
               <img src={images.sass} alt="logos" />
               <img src={images.redux} alt="logos" />
               {/* <SiHtml5 /> <DiCss3 /> <SiJavascript /> <DiReact /> <SiTypescript />{" "}
@@ -50,9 +50,9 @@ function About() {
           </section>
         </article>
 
-        <div data-aos="zoom-in" className="profile col-10 col-lg-4">
+        {/* <div data-aos="zoom-in" className="profile col-10 col-lg-4">
           <img src={images.sdqProfile} alt="Sodeeq awoyemi" />
-        </div>
+        </div> */}
       </section>
     </div>
   );

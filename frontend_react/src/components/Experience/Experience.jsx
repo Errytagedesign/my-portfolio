@@ -12,10 +12,10 @@ function Experience() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   return (
-    <main className="Experience" id="Experience">
-      <header data-aos="fade-right" className="mt-5">
+    <main className="Experience" id="Experience" data-sr-id="Experience">
+      <header data-aos="fade-right" className=" sectionHeader">
         {" "}
-        <h4 className="sectionHeader "> Where I’ve Worked</h4>
+        <h4 className=" "> Where I’ve Worked</h4>
       </header>
       <section className="d-flex flex-column flex-lg-row justify-content-between mt-5">
         <article className="d-flex flex-column col-12 col-lg-3 ">

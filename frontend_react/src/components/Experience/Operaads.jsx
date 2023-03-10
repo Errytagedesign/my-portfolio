@@ -8,27 +8,27 @@ function Operaads() {
         {" "}
         <mark>Frontend developer</mark> @Operaads
       </h4>
-      <small data-aos="fade-right"> October 2022 - January 2023 </small>
+      <small data-aos="fade-right"> January -December 2020 </small>
       <br />
       <br />
       <p data-aos="fade-left">
         <ul>
           <li>
-            Collaborated with cross‑functional teams to design, develop, and
-            launch new features on the website, resulting in a 20% increase in
-            website traffic.
+            Designed and developed user‑friendly web pages and components using
+            HTML/CSS/Javascript, ReactJS, NextJS, and Redux for state
+            management.
           </li>
           <li>
-            Developed and maintained multiple projects using ReactJS, NextJS,
-            and other front‑end technologies.
+            Worked closely with the UX team to translate wireframes into
+            interactive prototypes.
           </li>
           <li>
-            Implemented responsive design and optimized website performance for
-            be􀂂er user experience.
+            Improved website loading speed by implementing lazy loading and
+            reducing the number of requests.
           </li>
           <li>
-            Utilized bootstrap and styled‑components to style the website
-            effectively.
+            Developed custom ReactJS components to enhance the user experience
+            on the website.
           </li>
         </ul>
       </p>

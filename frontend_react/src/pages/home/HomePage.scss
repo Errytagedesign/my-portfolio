@@ -7,22 +7,22 @@
     width: 80%;
     // padding: 1em 2em;
   }
-  .sectionHeader {
-    width: 80%;
-    position: relative;
-    &:after {
-      content: "";
-      display: block;
-      height: 1px;
-      width: 50%;
-      position: absolute;
-      top: 60%;
-      left: 300px;
-      background-color: var(--grey);
-      @media screen and (max-width: 500px) {
-        top: 90%;
-        left: 100px;
-      }
-    }
-  }
+  // .sectionHeader {
+  //   width: 80%;
+  //   position: relative;
+  //   &:after {
+  //     content: "";
+  //     display: block;
+  //     height: 1px;
+  //     width: 50%;
+  //     position: absolute;
+  //     top: 60%;
+  //     left: 300px;
+  //     background-color: var(--grey);
+  //     @media screen and (max-width: 500px) {
+  //       top: 90%;
+  //       left: 100px;
+  //     }
+  //   }
+  // }
 }

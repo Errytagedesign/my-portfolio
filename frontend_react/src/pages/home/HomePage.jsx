@@ -18,13 +18,13 @@ function HomePage() {
       <About />
       <Experience />
 
-      <section id="work" className="mt-5">
-        <article data-aos="fade-right" className="mt-5  mb-5">
+      <section id="work" data-sr-id="work" className="mt-5">
+        <article data-aos="fade-right" className=" sectionHeader">
           {" "}
-          <h4 className="sectionHeader "> Some Things I’ve Built </h4>
+          <h4 className=" "> Some Things I’ve Built </h4>
         </article>
 
-        <section className="d-flex flex-row flex-wrap ">
+        <section className="d-flex flex-row flex-wrap mt-5 ">
           {WorkData.map((item) => (
             <article className="col-12 col-md-6 col-lg-4 p-2">
               <Work

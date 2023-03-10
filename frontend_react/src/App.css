@@ -14,6 +14,10 @@
   --shadow: 0px 24px 48px rgba(27, 44, 193, 0.1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::after,
 *::before {
@@ -33,6 +37,7 @@ body {
   background-color: var(--mainColor);
   color: var(--pryColor);
   font-size: 16px;
+  counter-reset: section;
 }
 
 /* ====General fonts styles=== */
@@ -105,4 +110,49 @@ ul {
 a {
   text-decoration: none;
   color: var(--pryColor);
+}
+
+.sectionHeader {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  -webkit-box-align: center;
+}
+
+.sectionHeader h4 {
+  /* width: 100%; */
+  font-size: clamp(24px, 5vw, var(--fontMed));
+  white-space: nowrap;
+}
+
+.sectionHeader:after {
+  content: "";
+  /* display: block; */
+  height: 1px;
+  width: 100%;
+  /* position: absolute; */
+  /* top: 60%;
+  left: 300px; */
+  background-color: var(--grey);
+  margin-left: 1em;
+}
+/* @media screen and (max-width: 500px) {
+  top: 90%;
+  left: 100px;
+} */
+
+.sectionHeader:before {
+  counter-increment: section;
+  content: "0" counter(section) ".";
+  color: var(--lightGrey);
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .sectionHeader h4 {
+    width: 100%;
+  }
 }
