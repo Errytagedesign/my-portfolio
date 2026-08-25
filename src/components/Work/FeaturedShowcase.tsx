@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
 import FeaturedProject from "./FeaturedProject";
-import type { Project } from "@/types";
+import type { FeaturedProjectData } from "@/types";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -28,13 +28,13 @@ const SCROLL_PER_SLIDE = 200;
  * itself is unchanged — this only controls how each row arrives and how its
  * copy types out.
  *
- * Below `md`, or under reduced motion, none of this runs: the rows fall back
- * to the plain stacked list via the `max-md:` / `motion-reduce:` classes.
+ * Runs at every width. Under reduced motion none of it runs and the rows
+ * fall back to a plain stacked list via the `motion-reduce:` classes.
  */
 export default function FeaturedShowcase({
   projects,
 }: {
-  projects: Project[];
+  projects: FeaturedProjectData[];
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -50,7 +50,7 @@ export default function FeaturedShowcase({
       const mm = gsap.matchMedia();
 
       mm.add(
-        "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+        "(prefers-reduced-motion: no-preference)",
         () => {
           // Park every slide off to the right; the first starts on screen.
           sections.forEach((section, i) => {
@@ -134,13 +134,13 @@ export default function FeaturedShowcase({
   return (
     <div
       ref={containerRef}
-      className="relative mt-16 h-screen overflow-hidden max-md:h-auto max-md:overflow-visible motion-reduce:h-auto motion-reduce:overflow-visible"
+      className="relative mt-16 h-screen overflow-hidden motion-reduce:h-auto motion-reduce:overflow-visible"
     >
       {projects.map((project, index) => (
         <article
           key={index}
           style={{ zIndex: index + 1 }}
-          className="absolute top-0 left-0 flex h-screen w-full items-center bg-main max-md:relative max-md:mb-24 max-md:h-auto max-md:bg-transparent motion-reduce:relative motion-reduce:mb-24 motion-reduce:h-auto motion-reduce:bg-transparent"
+          className="absolute top-0 left-0 flex h-screen w-full items-center overflow-hidden bg-main motion-reduce:relative motion-reduce:mb-24 motion-reduce:h-auto motion-reduce:bg-transparent"
         >
           <div className="w-full">
             <FeaturedProject
@@ -151,6 +151,7 @@ export default function FeaturedShowcase({
               link={project.link}
               github={project.github}
               cover={project.cover}
+              coy={project.coy}
               flip={index % 2 === 1}
             />
           </div>

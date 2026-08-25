@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
 
-import type { Project } from "@/types";
+import type { ImageAsset, Project } from "@/types";
 
 type FeaturedProjectProps = Omit<Project, "imgUrl" | "featured"> & {
-  image: Project["imgUrl"];
+  image: ImageAsset;
   /** Mirrors the layout so alternating rows face opposite directions. */
   flip: boolean;
 };
@@ -27,6 +27,7 @@ function FeaturedProject({
   github,
   flip,
   cover,
+  coy,
 }: FeaturedProjectProps) {
   // Some projects are client work with no public URL yet — render them as
   // plain, non-interactive cards rather than dead links.
@@ -42,11 +43,11 @@ function FeaturedProject({
     : {};
 
   return (
-    <div className="relative grid grid-cols-12 overflow-hidden max-md:rounded max-md:bg-sec max-md:shadow-card md:items-center md:overflow-visible">
+    <div className="relative grid grid-cols-12 md:items-center">
       {/* Screenshot */}
       <ImageWrap
         {...imageWrapProps}
-        className={`group relative col-start-1 col-end-13 row-start-1 overflow-hidden rounded max-md:absolute max-md:inset-0 max-md:opacity-[0.15] ${
+        className={`group relative col-start-1 col-end-13 row-start-2 mt-6 overflow-hidden rounded md:row-start-1 md:mt-0 ${
           flip ? "md:col-start-1 md:col-end-8" : "md:col-start-6 md:col-end-13"
         }`}
       >
@@ -59,7 +60,7 @@ function FeaturedProject({
           height={image.height}
           alt={`${name} screenshot`}
           sizes="(min-width: 768px) 60vw, 100vw"
-          className={`h-auto w-full transition-all duration-300 max-md:h-full max-md:w-full max-md:object-cover ${
+          className={`h-auto w-full object-cover object-top transition-all duration-300 max-md:max-h-[30vh] ${
             cover ? "" : "grayscale group-hover:grayscale-0"
           }`}
         />
@@ -67,13 +68,22 @@ function FeaturedProject({
 
       {/* Overlapping content card */}
       <div
-        className={`relative z-20 col-start-1 col-end-13 row-start-1 max-md:p-6 ${
+        className={`relative z-20 col-start-1 col-end-13 row-start-1 ${
           flip
             ? "md:col-start-7 md:col-end-13 md:text-right"
             : "md:col-start-1 md:col-end-7"
         }`}
       >
-        <p className="mb-2 text-sm text-pry">Featured Project</p>
+        <p className="mb-2 text-sm text-pry">
+          Featured Project
+          {coy && (
+            <>
+              <span className="text-light/40"> · </span>
+              <span className="text-light/70">for </span>
+              <span className="font-medium text-accent">@{coy}</span>
+            </>
+          )}
+        </p>
 
         <h3
           data-heading
@@ -93,8 +103,8 @@ function FeaturedProject({
           )}
         </h3>
 
-        <div className="mb-6 rounded bg-sec p-6 text-base text-light shadow-card max-md:bg-transparent max-md:p-0">
-          <p data-body className="text-base text-light">
+        <div className="mb-6 rounded bg-sec p-4 text-light shadow-card md:p-6">
+          <p data-body className="text-sm text-light md:text-base">
             {desc}
           </p>
         </div>

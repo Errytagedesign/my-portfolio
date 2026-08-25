@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
-import { images } from "./exportImg";
+import { images } from './exportImg';
 
 /**
  * Full screen logo splash shown for the first 3 seconds. It sits on top of the
@@ -13,29 +13,29 @@ function SplashScreen() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    const timeId = setTimeout(() => setVisible(false), 3000);
+    const timeId = setTimeout(() => setVisible(false), 1000);
 
     return () => clearTimeout(timeId);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = visible ? "hidden" : "";
+    document.body.style.overflow = visible ? 'hidden' : '';
 
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     };
   }, [visible]);
 
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex h-screen w-full items-center justify-center bg-main">
-      <main className="my-8 animate-pulse-scale">
+    <div className='fixed inset-0 z-50 flex h-screen w-full items-center justify-center bg-main'>
+      <main className='my-8 animate-pulse-scale'>
         <Image
           src={images.logo.src}
           width={images.logo.width}
           height={images.logo.height}
-          alt="Sodeeq Awoyemi logo"
+          alt='Sodeeq Awoyemi logo'
           priority
         />
       </main>

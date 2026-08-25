@@ -14,6 +14,8 @@
   --color-grey-faded: #114c2436;
   --color-light: #ccd6f6;
   --color-hover: #013d1327;
+  /* Credit line — deliberately off-palette so attribution reads as distinct */
+  --color-accent: #ffbf47;
 
   /* Type scale */
   --text-small: 1rem;

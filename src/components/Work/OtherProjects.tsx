@@ -28,6 +28,7 @@ function OtherProjects() {
             stacks={item.stacks}
             link={item.link}
             github={item.github}
+            coy={item.coy}
           />
         ))}
       </ul>

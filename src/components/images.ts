@@ -16,6 +16,7 @@ const images = {
   panelsuite: { src: `${dir}/panelsuite.png`, width: 1440, height: 900 },
   geeft: { src: `${dir}/geeft.png`, width: 1440, height: 660 },
   neolyf: { src: `${dir}/neolyf.png`, width: 1440, height: 900 },
+  kanselo: { src: `${dir}/kanselo.png`, width: 1440, height: 900 },
 
   // Earlier work
   movies: { src: `${dir}/movies.png`, width: 2560, height: 1375 },
