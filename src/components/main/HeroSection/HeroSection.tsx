@@ -31,9 +31,9 @@ function HeroSection() {
       <motion.section variants={container} initial="hidden" animate="visible">
         <motion.p className="text-pry"> Hey There, I&apos;m </motion.p>
 
-        <motion.h2 className={heading} variants={item}>
+        <motion.h1 className={heading} variants={item}>
           Sodeeq Awoyemi.
-        </motion.h2>
+        </motion.h1>
 
         <motion.h2 className={heading} variants={item}>
           Web &amp; Mobile App Developer | Crafting Exceptional User Experiences

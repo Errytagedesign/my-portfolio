@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sodeeq Awoyemi",
+  "name": "Sodeeq Awoyemi \u2014 Frontend Engineer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#001707",
+  "background_color": "#001707",
+  "description": "Portfolio of Sodeeq Awoyemi, frontend engineer building web and mobile apps with React, Next.js and React Native."
 }
