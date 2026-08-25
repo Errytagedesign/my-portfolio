@@ -1,4 +1,4 @@
-import images from '../images';
+import images from '../../images';
 import type { FeaturedProjectData, Project } from '@/types';
 
 /**

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /*
   Design tokens for the portfolio. These replace the old `:root` custom
@@ -67,3 +67,39 @@
 @theme inline {
   --font-sans: var(--font-ubuntu), sans-serif;
 }
+
+/* ====Btns==== */
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  min-height: 48px;
+  padding: 2px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  border-radius: 10px;
+  letter-spacing: 0.112px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pry-btn {
+  background: var(--color-pry);
+  color: var(--color-white);
+}
+
+.outline-btn {
+  border: solid 1px var(--color-pry);
+  color: var(--color-pry);
+}
+
+/* ====Btns==== */

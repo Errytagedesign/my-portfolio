@@ -12,13 +12,15 @@ import type { FeaturedProjectData } from "@/types";
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 /**
- * Master-timeline beats, in arbitrary timeline units. Each slide gets one
- * STEP: its heading and description finish typing (TEXT) before the next
- * slide travels in (SLIDE) — so text is never cut off mid-reveal.
+ * Master-timeline beats, in arbitrary timeline units. Per slide: its copy
+ * types out (TEXT), the finished slide is held still so it can actually be
+ * read (HOLD), then the next slide travels in (SLIDE). Text is therefore
+ * always complete — and has been sat with — before a new slide covers it.
  */
-const STEP = 1.4;
 const TEXT = 0.8;
+const HOLD = 0.5;
 const SLIDE = 0.6;
+const STEP = TEXT + HOLD + SLIDE;
 
 /** Viewport-heights of scroll allotted to each slide. */
 const SCROLL_PER_SLIDE = 200;
@@ -105,12 +107,12 @@ export default function FeaturedShowcase({
           sections.forEach((section, i) => {
             const beat = i * STEP;
 
-            // Slide arrives first, then its copy types out.
+            // Slide finishes arriving exactly as its copy starts typing.
             if (i > 0) {
               master.to(
                 section,
                 { left: "0%", duration: SLIDE, ease: "power2.inOut" },
-                beat - TEXT,
+                beat - SLIDE,
               );
             }
 

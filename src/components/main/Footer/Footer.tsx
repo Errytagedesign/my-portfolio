@@ -19,13 +19,14 @@ const socials = [
   },
 ];
 
-const iconLink = "text-grey transition-all duration-1000 ease-in-out hover:text-pry";
+const iconLink =
+  "pointer-events-auto text-grey transition-all duration-1000 ease-in-out hover:text-pry";
 
 function Footer() {
   return (
     <div className="relative mt-36 flex flex-row">
       {/* Big screen social icons — fixed rails, hidden on mobile */}
-      <section className="hidden md:fixed md:top-[80%] md:right-0 md:bottom-0 md:left-0 md:z-0 md:flex md:w-full md:flex-row md:items-center md:justify-between md:px-4 md:transition-all md:duration-500 md:ease-in-out">
+      <section className="hidden md:pointer-events-none md:fixed md:top-[80%] md:right-0 md:bottom-0 md:left-0 md:z-0 md:flex md:w-full md:flex-row md:items-center md:justify-between md:px-4 md:transition-all md:duration-500 md:ease-in-out">
         <aside className="flex flex-col items-center justify-between text-center text-2xl">
           {socials.map(({ name, href, Icon }) => (
             <a
@@ -44,7 +45,7 @@ function Footer() {
 
         <aside className="flex flex-col items-center justify-between text-center text-2xl">
           <a
-            className="text-[0.7em] text-grey [writing-mode:vertical-rl] hover:text-pry"
+            className="pointer-events-auto text-[0.7em] text-grey [writing-mode:vertical-rl] hover:text-pry"
             href="mailto:errytage@gmail.com"
           >
             errytage@gmail.com

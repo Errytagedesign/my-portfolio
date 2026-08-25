@@ -1,19 +1,19 @@
-import SectionHeader from "../SectionHeader";
+import SectionHeader from '../../ui/SectionHeader';
 
 function About() {
   return (
-    <div className="mb-40" id="about">
-      <SectionHeader index={1} title="About Me" />
+    <div className='mb-40' id='about'>
+      <SectionHeader index={1} title='About Me' />
 
       <section
-        data-aos="fade-right"
-        className="mt-12 flex flex-col items-center justify-between lg:flex-row"
+        data-aos='fade-right'
+        className='mt-12 flex flex-col items-center justify-between lg:flex-row'
       >
-        <article className="w-full lg:w-[58.333%]">
+        <article className='w-full lg:w-[58.333%]'>
           <p
-            data-aos="zoom-in-down"
-            data-aos-duration="1500"
-            className="text-base text-light"
+            data-aos='zoom-in-down'
+            data-aos-duration='1500'
+            className='text-base text-light'
           >
             I&apos;m Sodeeq Olaide Awoyemi, a web and mobile app developer with
             a passion for creating exceptional user experiences. With expertise
