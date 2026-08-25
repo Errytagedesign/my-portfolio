@@ -27,9 +27,9 @@ function TabTitle<T extends string>({
         isActive ? 'border-pry text-pry' : 'border-grey-faded text-grey'
       }`}
     >
-      <h4 className='ml-2 whitespace-nowrap py-[0.3em] text-2xl font-normal max-[900px]:text-base'>
+      <span className='block ml-2 whitespace-nowrap py-[0.3em] text-2xl font-normal max-[900px]:text-base'>
         {title}
-      </h4>
+      </span>
     </button>
   );
 }

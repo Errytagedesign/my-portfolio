@@ -18,9 +18,9 @@ function ExperienceEntry({
 }: ExperienceEntryProps) {
   return (
     <main className="max-[900px]:mt-8">
-      <h4 data-aos="fade-left" className="text-med font-normal">
+      <h3 data-aos="fade-left" className="text-med font-normal">
         <mark className="bg-transparent p-0 text-light">{role}</mark> @{company}
-      </h4>
+      </h3>
 
       <small data-aos="fade-left" className="bg-transparent p-0 text-light">
         {period}
