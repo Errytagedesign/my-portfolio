@@ -1,0 +1,151 @@
+.navContainer {
+  position: relative;
+
+  nav {
+    @media screen and (max-width: 600px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 1020px) {
+      .ham {
+        cursor: pointer;
+        z-index: 9;
+        display: flex;
+        justify-content: flex-end;
+        width: 30px;
+        height: 25px;
+        position: relative;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+        span {
+          display: block;
+          position: absolute;
+          height: 3px;
+          width: 30px;
+          background: var(--color-pry);
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transition: 0.25s ease-in-out;
+          -webkit-transition: 0.25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+        }
+
+        span:nth-child(1) {
+          top: 0px;
+        }
+
+        span:nth-child(2) {
+          top: 7px;
+        }
+
+        span:nth-child(3) {
+          top: 15px;
+        }
+      }
+
+      .open {
+        width: 20%;
+        height: 35px;
+        position: relative;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        cursor: pointer;
+        z-index: 9;
+
+        span {
+          display: block;
+          position: absolute;
+          height: 4px;
+          width: 30px;
+          background: var(--color-pry);
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transition: 0.25s ease-in-out;
+          -webkit-transition: 0.25s ease-in-out;
+          -moz-transition: 0.25s ease-in-out;
+          -o-transition: 0.25s ease-in-out;
+        }
+
+        span:nth-child(1) {
+          top: 18px;
+          -webkit-transform: rotate(135deg);
+          -moz-transform: rotate(135deg);
+          -o-transform: rotate(135deg);
+          transform: rotate(135deg);
+        }
+
+        span:nth-child(2) {
+          opacity: 0;
+          left: -60px;
+        }
+
+        span:nth-child(3) {
+          top: 18px;
+          -webkit-transform: rotate(-135deg);
+          -moz-transform: rotate(-135deg);
+          -o-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+        }
+      }
+
+      .openNav {
+        display: flex;
+        align-items: flex-end;
+        position: fixed;
+        justify-content: flex-end;
+        top: 0;
+        left: 120%;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        transition: all 1s ease-in-out;
+        height: 100vh;
+        background: #09090b80;
+        backdrop-filter: blur(5px) brightness(0.9);
+        -webkit-backdrop-filter: blur(5px) brightness(0.9);
+      }
+
+      .closeNav {
+        display: flex;
+        align-items: flex-end;
+        position: fixed;
+        justify-content: flex-end;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9;
+        transition: all 1s ease-in-out;
+        height: 100vh;
+        background: #09090b80;
+        backdrop-filter: blur(5px) brightness(0.9);
+        -webkit-backdrop-filter: blur(5px) brightness(0.9);
+      }
+    }
+  }
+}
