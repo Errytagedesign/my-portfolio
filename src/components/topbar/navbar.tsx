@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import BrandLogo from '../ui/brand-logo';
-import styles from './navBar.module.css';
+import styles from './navbar.module.css';
 import ResponsiveNavBar from './responsive-navbar';
 import { usePathname } from 'next/navigation';
 
