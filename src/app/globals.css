@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for the portfolio. These replace the old `:root` custom
+  properties from App.css and are exposed to Tailwind as real utilities
+  (bg-main, text-pry, text-big, etc).
+*/
+@theme {
+  /* Palette */
+  --color-main: #001707;
+  --color-sec: #013d13;
+  --color-pry: #44d7a8;
+  --color-grey: #5d7b5f;
+  --color-grey-faded: #114c2436;
+  --color-light: #ccd6f6;
+  --color-hover: #013d1327;
+
+  /* Type scale */
+  --text-small: 1rem;
+  --text-med: 1.8rem;
+  --text-big: 2.5rem;
+  --text-super: 3.5rem;
+
+  /*
+    Bootstrap-parity breakpoint so the old lg: layouts keep their cutoff.
+    Must be declared in rem: Tailwind sorts breakpoints to decide variant
+    precedence, and a px value sorts ahead of the rem-based defaults, which
+    would let sm:/md: override lg:.
+  */
+  --breakpoint-lg: 62rem; /* 992px */
+
+  /* Shadows */
+  --shadow-glow: 0px 24px 48px rgba(27, 44, 193, 0.1);
+  --shadow-panel: 0px 4px 18px 20px rgba(1, 64, 15, 0.1);
+  --shadow-card: 0 10px 30px -15px rgba(0, 8, 3, 0.7);
+  --shadow-card-hover: 0 20px 30px -15px rgba(0, 8, 3, 0.7);
+
+  /* Animations */
+  --animate-fade-in: fade-in 0.5s ease;
+  --animate-pulse-scale: pulse-scale 1s linear infinite;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse-scale {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+}
+
+/* Font family comes from next/font (see app/layout.jsx) */
+@theme inline {
+  --font-sans: var(--font-ubuntu), sans-serif;
+}
