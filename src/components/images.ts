@@ -1,12 +1,12 @@
 import type { ImageAsset } from "@/types";
 
 /**
- * Everything under `public/assets-images`. Files in `public/` are served
+ * Everything under `public/images`. Files in `public/` are served
  * verbatim rather than imported, so Next cannot infer their dimensions —
  * each entry carries its intrinsic size so `next/image` can still reserve
  * layout space and avoid shifting.
  */
-const dir = "/assets-images";
+const dir = "/images";
 
 const images = {
   logo: { src: `${dir}/logo.png`, width: 499, height: 502 },

@@ -7,7 +7,6 @@ export type ImageAsset = {
 
 /** A single entry in the Work section. */
 export type Project = {
-  id: number;
   name: string;
   desc: string;
   imgUrl: ImageAsset;

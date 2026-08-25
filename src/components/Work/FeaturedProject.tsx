@@ -3,7 +3,7 @@ import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
 
 import type { Project } from "@/types";
 
-type FeaturedProjectProps = Omit<Project, "id" | "imgUrl" | "featured"> & {
+type FeaturedProjectProps = Omit<Project, "imgUrl" | "featured"> & {
   image: Project["imgUrl"];
   /** Mirrors the layout so alternating rows face opposite directions. */
   flip: boolean;
@@ -14,6 +14,9 @@ type FeaturedProjectProps = Omit<Project, "id" | "imgUrl" | "featured"> & {
  * card overlapping from the left; even rows (`flip`) mirror that.
  * Below `md` the two stack into the same cell — content on top of a dimmed
  * image.
+ *
+ * `data-heading` / `data-body` are the hooks FeaturedShowcase splits and
+ * types out on scroll.
  */
 function FeaturedProject({
   name,
@@ -39,7 +42,7 @@ function FeaturedProject({
     : {};
 
   return (
-    <li className="relative mb-24 grid grid-cols-12 overflow-hidden last:mb-0 max-md:rounded max-md:bg-sec max-md:shadow-card md:items-center md:mb-32 md:overflow-visible">
+    <div className="relative grid grid-cols-12 overflow-hidden max-md:rounded max-md:bg-sec max-md:shadow-card md:items-center md:overflow-visible">
       {/* Screenshot */}
       <ImageWrap
         {...imageWrapProps}
@@ -72,7 +75,10 @@ function FeaturedProject({
       >
         <p className="mb-2 text-sm text-pry">Featured Project</p>
 
-        <h3 className="mb-5 text-2xl font-semibold text-light md:text-3xl">
+        <h3
+          data-heading
+          className="mb-5 text-2xl font-semibold text-light md:text-3xl"
+        >
           {link ? (
             <a
               href={link}
@@ -88,7 +94,9 @@ function FeaturedProject({
         </h3>
 
         <div className="mb-6 rounded bg-sec p-6 text-base text-light shadow-card max-md:bg-transparent max-md:p-0">
-          <p className="text-base text-light">{desc}</p>
+          <p data-body className="text-base text-light">
+            {desc}
+          </p>
         </div>
 
         <ul
@@ -102,38 +110,38 @@ function FeaturedProject({
         </ul>
 
         {(github || link) && (
-        <div
-          className={`flex flex-row items-center gap-5 ${
-            flip ? "md:justify-end" : ""
-          }`}
-        >
-          {github && (
-            <a
-              href={github}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`${name} source on GitHub`}
-              className="text-light transition-colors hover:text-pry"
-            >
-              <BsGithub size={22} />
-            </a>
-          )}
+          <div
+            className={`flex flex-row items-center gap-5 ${
+              flip ? "md:justify-end" : ""
+            }`}
+          >
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${name} source on GitHub`}
+                className="text-light transition-colors hover:text-pry"
+              >
+                <BsGithub size={22} />
+              </a>
+            )}
 
-          {link && (
-            <a
-              href={link}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`Visit ${name}`}
-              className="text-light transition-colors hover:text-pry"
-            >
-              <BsBoxArrowUpRight size={22} />
-            </a>
-          )}
-        </div>
+            {link && (
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Visit ${name}`}
+                className="text-light transition-colors hover:text-pry"
+              >
+                <BsBoxArrowUpRight size={22} />
+              </a>
+            )}
+          </div>
         )}
       </div>
-    </li>
+    </div>
   );
 }
 

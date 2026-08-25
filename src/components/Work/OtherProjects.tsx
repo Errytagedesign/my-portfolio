@@ -20,9 +20,9 @@ function OtherProjects() {
       </h3>
 
       <ul className="mt-12 grid list-none grid-cols-1 gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
-        {visible.map((item) => (
+        {visible.map((item, index) => (
           <ProjectCard
-            key={item.id}
+            key={index}
             name={item.name}
             desc={item.desc}
             stacks={item.stacks}
