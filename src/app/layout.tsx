@@ -17,7 +17,7 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://sodeeqawoyemi.netlify.app'),
+  metadataBase: new URL('https://sodeeqawoyemi.dev'),
   title: 'Sodeeq Awoyemi Portfolio website',
   description:
     'Personal portfolio website of Sodeeq Awoyemi, a frontend web developer and software engineer.',
@@ -30,7 +30,7 @@ export const metadata = {
     title: 'Sodeeq Awoyemi portfolio website',
     description:
       'Personal portfolio website of Sodeeq Awoyemi, a frontend web developer and software engineer.',
-    url: 'https://sodeeqawoyemi.netlify.app/',
+    url: 'https://sodeeqawoyemi.dev/',
     images: [{ url: '/logo512.png', width: 1200, height: 630 }],
   },
 };
